@@ -24,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot](./preview.jpg)
 
 ### Links
 
-- Solution URL: [https://github.com/i-prkr/meet-landing-page](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/i-prkr/meet-landing-page](https://github.com/i-prkr/meet-landing-page)
+- Live Site URL: [Github Pages](https://i-prkr.github.io/meet-landing-page/)
 
 ## My process
 
