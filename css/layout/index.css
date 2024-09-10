@@ -77,6 +77,14 @@ header {
     flex-direction: row;
     gap: clamp(1.5rem, 1.5rem + 2vw, 50rem);
   }
+  .hero__content {
+    padding-inline: 8rem;
+  }
+  .hero__buttons {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 .desktop-right {

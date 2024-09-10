@@ -37,6 +37,16 @@
   @include respond-to("large") {
     flex-direction: row;
     gap: clamp(1.5rem, 1.5rem + 2vw, 50rem);
+
+    &__content {
+      padding-inline: 8rem;
+    }
+
+    &__buttons {
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+    }
   }
 }
 
