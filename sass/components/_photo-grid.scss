@@ -1,0 +1,24 @@
+@use "../utils/mixins" as *;
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+
+  > img {
+    border-radius: 5%;
+  }
+
+  @include respond-to("medium") {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1.5rem;
+  }
+
+  @include respond-to("large") {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+  }
+}

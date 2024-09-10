@@ -1,0 +1,39 @@
+@use "sass:color";
+
+@use "../utils/colours" as *;
+@use "../utils/mixins" as *;
+
+.footer {
+  position: relative;
+  overflow: hidden;
+  background-color: $cyan-600;
+
+  &__text {
+    position: relative;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding-block: 4rem;
+    padding-inline: 2rem;
+
+    @include respond-to("large") {
+      flex-direction: row;
+      padding-inline: 10rem;
+      gap: clamp(1.5rem, 1.5rem + 8vw, 50rem);
+
+      > h2,
+      p,
+      a {
+        text-align: start;
+      }
+    }
+  }
+
+  > picture > img {
+    position: absolute;
+    opacity: 0.1;
+    width: 100%;
+  }
+}

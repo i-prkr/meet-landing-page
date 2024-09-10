@@ -1,0 +1,74 @@
+@use "../utils/colours" as *;
+@use "../utils/mixins" as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+span,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1.1;
+  letter-spacing: 0px;
+  margin-block-start: 0;
+  text-align: center;
+}
+
+.text {
+  &-preset-1 {
+    font-size: 3rem;
+  }
+
+  &-preset-2 {
+    font-size: 2rem;
+  }
+
+  &-preset-3 {
+    font-size: 1rem;
+    letter-spacing: 0.25rem;
+    font-variant: small-caps;
+    color: $cyan-600;
+  }
+
+  &-preset-4 {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: $slate-600;
+  }
+
+  &-preset-5 {
+    line-height: 1.5;
+    color: $slate-600;
+  }
+
+  &-white {
+    color: $white;
+  }
+
+  &-cyan {
+    color: $cyan-300;
+  }
+
+  @include respond-to("medium") {
+    &-preset-1 {
+      font-size: 4rem;
+    }
+
+    &-preset-2 {
+      font-size: 2.5rem;
+    }
+
+    &-preset-3 {
+      font-size: 1rem;
+    }
+
+    &-preset-4 {
+      font-size: 1.125rem;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@use "../utils/colours" as *;
+
+.button {
+  border-radius: 3rem;
+  padding-block: 1rem;
+  padding-inline: 2.5rem;
+  text-wrap: nowrap;
+  font-weight: bold;
+
+  &-purple {
+    background-color: $purple-600;
+
+    &:hover {
+      background-color: lighten($color: $purple-600, $amount: 10);
+    }
+  }
+
+  &-cyan {
+    background-color: $cyan-600;
+
+    &:hover {
+      background-color: lighten($color: $cyan-600, $amount: 10);
+    }
+  }
+}

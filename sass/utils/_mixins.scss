@@ -1,0 +1,25 @@
+@use "./breakpoints" as *;
+
+@mixin respond-to($size) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $size) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $size))} {
+      @content;
+    }
+  }
+
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoints}`. "
+          + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+@mixin large-media-only() {
+  display: none;
+
+  @include respond-to("large") {
+    display: inline-block;
+  }
+}

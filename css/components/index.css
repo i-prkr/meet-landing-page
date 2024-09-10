@@ -1,0 +1,75 @@
+.button {
+  border-radius: 3rem;
+  padding-block: 1rem;
+  padding-inline: 2.5rem;
+  text-wrap: nowrap;
+  font-weight: bold;
+}
+.button-purple {
+  background-color: #855fb1;
+}
+.button-purple:hover {
+  background-color: #9f81c2;
+}
+.button-cyan {
+  background-color: #4d96a9;
+}
+.button-cyan:hover {
+  background-color: #6dacbc;
+}
+
+.page-break {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  z-index: 2;
+}
+.page-break__line {
+  border-left: 1px solid;
+  height: 4rem;
+  width: 0px;
+  color: #d1d1df;
+}
+.page-break__number {
+  color: #87879d;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: 1px;
+  border-color: #d1d1df;
+  padding: 1rem;
+  position: relative;
+  background-color: #fafafa;
+}
+
+.page-break-shiftdown {
+  position: relative;
+  bottom: -2rem;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+.photo-grid > img {
+  border-radius: 5%;
+}
+@media (min-width: 48rem) {
+  .photo-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 75rem) {
+  .photo-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

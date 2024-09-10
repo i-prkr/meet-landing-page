@@ -1,0 +1,33 @@
+@use "../utils/mixins" as *;
+
+.main-content {
+  &-container {
+    padding-block: 2rem 4rem;
+    padding-inline: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__text {
+    padding-block-start: 1rem;
+  }
+
+  @include respond-to("medium") {
+    &-container {
+      padding-inline: 3rem;
+    }
+  }
+
+  @include respond-to("large") {
+    &-container {
+      padding-inline: 10rem;
+    }
+  }
+}
