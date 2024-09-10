@@ -9,7 +9,7 @@
 
   &__content {
     padding-block-start: 3rem;
-    padding-inline: 2rem;
+    padding-inline: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,6 +32,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  @include respond-to("medium") {
+    &__content {
+      padding-inline: 8rem;
+    }
   }
 
   @include respond-to("large") {

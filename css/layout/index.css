@@ -51,7 +51,7 @@ header {
 }
 .hero__content {
   padding-block-start: 3rem;
-  padding-inline: 2rem;
+  padding-inline: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,6 +71,11 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 48rem) {
+  .hero__content {
+    padding-inline: 8rem;
+  }
 }
 @media (min-width: 75rem) {
   .hero {
@@ -115,10 +120,16 @@ header {
   .main-content-container {
     padding-inline: 3rem;
   }
+  .main-content__info {
+    padding-inline: 5.5rem;
+  }
 }
 @media (min-width: 75rem) {
   .main-content-container {
     padding-inline: 10rem;
+  }
+  .main-content__info {
+    padding-inline: 18rem;
   }
 }
 

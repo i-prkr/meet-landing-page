@@ -23,11 +23,19 @@
     &-container {
       padding-inline: 3rem;
     }
+
+    &__info {
+      padding-inline: 5.5rem;
+    }
   }
 
   @include respond-to("large") {
     &-container {
       padding-inline: 10rem;
+    }
+
+    &__info {
+      padding-inline: 18rem;
     }
   }
 }
